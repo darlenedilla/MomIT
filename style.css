@@ -5,3 +5,9 @@ Author: Nanna Valbjørn & Darlene Dilla Frandsen
 Template: colibri-wp
 Version: 1.0.0
 Text Domain: momit */
+
+/* Use html.colibri-wp-theme prefix on EVERYTHING */
+
+html.colibri-wp-theme body {
+  background-color: red;
+}
