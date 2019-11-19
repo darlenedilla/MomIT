@@ -4,3 +4,7 @@ Description: MomIT
 Author: Nanna Valbjørn & Darlene Dilla Frandsen
 Version: 1.0.0
 Text Domain: momit */
+
+body{
+    background-color: red;
+}
