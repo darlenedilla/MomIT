@@ -2,7 +2,8 @@
     <head>
         <?php wp_head(); ?>
     </head>
-    <header>
+    <body>
+    <nav>
         <?php
             // Navbar
             wp_nav_menu();
@@ -17,4 +18,4 @@
                 dynamic_sidebar('navigation-searchbar');
             }
         ?>
-    </header>
+    </nav>
