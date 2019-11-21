@@ -1,4 +1,6 @@
 
+<footer>
+
 <div id="footer-sidebar" class="secondary">
     <div id="footer-sidebar1">
     <?php
@@ -15,6 +17,8 @@
     ?>
     </div>
 </div>
-<?php wp_footer(); ?>
+
+</footer>
+<!-- <?php wp_footer(); ?> -->
 </body>
 </html>

@@ -5,6 +5,8 @@ Template Name: Om MomIT
 ?>
 
 <?php get_header(); ?>
+<section class="mainSection">
+
 <?php if ( get_header_image() ) : ?>
     <div id="site-header">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -12,4 +14,6 @@ Template Name: Om MomIT
         </a>
     </div>
 <?php endif; ?>
+
+</section>
 <?php get_footer(); ?>
