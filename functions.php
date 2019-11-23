@@ -1,15 +1,23 @@
 <?php
 
 /*
- * Loading stylesheets 
+ * Loading stylesheets and scripts
  */
 function load_stylesheets(){
     wp_register_style('stylesheet', get_template_directory_uri() . '/style.css',
     array(), false, 'all');
     wp_enqueue_style('stylesheet');
+    wp_enqueue_style( 'custom-fa', 'https://use.fontawesome.com/releases/v5.0.6/css/all.css' );
 }
 
 add_action('wp_enqueue_scripts','load_stylesheets');
+
+function add_custom_script() {
+    wp_register_script('custom_script', get_template_directory_uri() . '/script.js', array( 'jquery' ));
+    wp_enqueue_script('custom_script');
+}  
+add_action( 'wp_enqueue_scripts', 'add_custom_script' );
+  
 
 /*
  * Customer menus 
