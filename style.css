@@ -205,7 +205,7 @@ nav {
   background-color: #0b4f6c;
 
   z-index: 100;
-  transition-duration: 1s;
+  transition-duration: 0.3s;
 }
 .burgerLine:nth-child(2) {
   margin-bottom: 5px;
@@ -271,7 +271,7 @@ nav {
 
   opacity: 0;
   display: none;
-  transition-duration: 1s;
+  transition-duration: 0.3s;
 }
 
 .menu-primary-container {

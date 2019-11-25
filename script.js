@@ -1,19 +1,20 @@
-jQuery(function(){
-    jQuery("#scroll-arrow").click(function() {
-        jQuery('html, body').animate({
-            scrollTop: jQuery("#sub-page-button-section").offset().top
-        }, 2000);
-        jQuery("#scroll-arrow").css("animation-play-state", "paused");
-    });
+jQuery(function() {
+  jQuery("#scroll-arrow").click(function() {
+    jQuery("html, body").animate(
+      {
+        scrollTop: jQuery("#sub-page-button-section").offset().top
+      },
+      2000
+    );
+    jQuery("#scroll-arrow").css("animation-play-state", "paused");
+  });
 
-    burgerListener();
-    searchBarListener();
-
-})
+  burgerListener();
+  searchBarListener();
+});
 
 // BurgerMenu Script
 function burgerListener() {
-
   //   Variables:
   var burgerIcon = document.getElementById("burgerMenuIcon");
   var burgerLine1 = document.getElementById("burgerLine1");
@@ -36,7 +37,7 @@ function burgerListener() {
         burgerContent.style.opacity = "1";
         burgerLongLine.style.opacity = "1";
         burgerLongLine.style.height = "50vh";
-      }, 500);
+      }, 100);
 
       burgerOpen = 1;
     } else {
@@ -47,12 +48,10 @@ function burgerListener() {
 
       setTimeout(function() {
         burgerContent.style.display = "none";
+        burgerLongLine.style.display = "none";
         burgerLongLine.style.opacity = "0";
         burgerLongLine.style.height = "0vh";
-        setTimeout(function() {
-          burgerLongLine.style.display = "none";
-        }, 500);
-      }, 500);
+      }, 100);
 
       burgerOpen = 0;
     }
