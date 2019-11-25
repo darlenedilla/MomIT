@@ -5,7 +5,6 @@ Template Name: Forside
 ?>
 
 <?php get_header(); ?>
-<header>
     <?php if ( get_header_image() ) : ?>
         <div class="site-header">
             <img id="header-img" src="<?php header_image(); ?>" width="<?= absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
