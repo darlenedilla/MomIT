@@ -4,7 +4,6 @@ Template Name: Subpage
 */
 ?>
 <?php get_header(); ?>
-<header>
     <div class="site-header">
         <img class="sub-page-image" src="<?php header_image(); ?>" width="<?= absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
         <h1><?= the_title(); ?></h1>
