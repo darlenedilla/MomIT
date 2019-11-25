@@ -21,14 +21,17 @@
                             wp_nav_menu();
                             ?>
                             
-                            <div class="footer-sidebar2">
-                                <p class="kontakt-sidebar">Kontaktoplysninger:</p>
-                            <?php
-                            if(is_active_sidebar('footer-sidebar-2')){
-                            dynamic_sidebar('footer-sidebar-2');
-                            }
-                            ?>
+                              <div class="footer-sidebar2">
+                                <div class="footer-download">
+                                        <a href="https://apps.apple.com/dk/app/mit-sygehus/id836616671?l=da" target="_blank">
+                                            <img class="" src="<?php echo get_stylesheet_directory_uri(); ?>/img/appstore.png" alt="Appstore link">
+                                        </a>
+                                        <a href="https://play.google.com/store/apps/details?id=dk.medware.mitforloeb&hl=da" target="_blank">
+                                            <img class="" src="<?=get_stylesheet_directory_uri(); ?>/img/googleplay.png" alt="Google play link">
+                                        </a>
+                                    </div>
                             </div>
+        
 
                     </div>
             
