@@ -23,15 +23,15 @@ body{
     font-size: 1.4rem;
 }
 
-#site-header{
+.site-header{
     position: relative;
     max-width: 100vw;
     width: 100vw;
-    height: 60vh;
     max-height: 60vh;
 }
 
-#site-header #header-img{
+.site-header #header-img,
+.site-header .sub-page-image{
     object-fit: cover;
     width: 375px;
     height: auto;
@@ -40,7 +40,7 @@ body{
 
 #header-text{
     position: absolute;
-    left: 8%;
+    left: 16%;
     top: 25%;
     font-size: 1.8rem;
     color: white;
@@ -54,8 +54,8 @@ body{
     width: 250px;
     background-color: #df928e;
     position: absolute;
-    top: 70%;
-    left: 8%;
+    top: 60%;
+    left: 16%;
     border-radius: 4px;
     display: flex;
     justify-content: space-around;
@@ -73,8 +73,18 @@ body{
     background-color: #fff;
 }
 
+#scroll-arrow{
+    position: absolute;
+    bottom: -15px;
+    left: 45%;
+    font-size: 35px;
+    color: black;
+    animation: bounce 2s infinite;
+    cursor: pointer;
+}
+
 #sub-page-button-section{
-    margin-top: 50px;
+    margin-top: 35px;
 }
 
 .entry-content-page{
@@ -94,15 +104,45 @@ body{
     padding: 15px 0;
 }
 
-#scroll-arrow{
-    position: absolute;
-    bottom: -40px;
-    left: 45%;
-    font-size: 35px;
-    color: black;
-    animation: bounce 2s infinite;
-    cursor: pointer;
+.about-button{
+    color: #0092CF;
 }
+.about-button a{
+    background-color: #FFF;
+    border: 1px solid #0092CF;
+    border-radius: 4px;
+    font-family: "Open sans", sans-serif;
+    font-weight: 400;
+    width: 250px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.site-header h1{
+    position: absolute;
+    bottom: 20px;
+    left: 30%;
+    color: #FFF;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+}
+
+.site-header h1:after{
+    content: "";
+    border-bottom: 4px solid #FFF;
+    display: block;
+}
+
+.entry-content-page p{
+    color: #0B4F6C;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    width: 300px;
+    margin-top: 20px;
+}
+
+
+
 
   
 @keyframes bounce {
