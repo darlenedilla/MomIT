@@ -433,3 +433,64 @@ footer {
 }
 
 /* Footer styling slut */
+
+/*  accordion styling start */
+
+.accordion-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-bottom: 5vh;
+  overflow: hidden;
+
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: -1px 6px 22px -1px rgba(0, 0, 0, 0.75);
+
+  font-family: "Open Sans", "sans-serif";
+}
+
+.accordion-item-container {
+  width: 100%;
+  height: auto;
+
+  background-color: #fff;
+}
+
+.accordion-header-container {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  padding: 10px;
+  color: #df928e;
+  box-shadow: 0px 7px 16px 1px rgba(0, 0, 0, 0.28);
+}
+
+.accordion-item-container h3 {
+  line-height: 7vh;
+  display: inline-block;
+  margin-left: 5vw;
+  font-size: 15px;
+}
+
+.accordion-item-container i {
+  display: block;
+  float: right;
+  margin-right: 5vw;
+  font-size: 20px;
+  line-height: 7vh;
+}
+
+.accordion-content-container {
+  display: none;
+  width: 100%;
+  height: auto;
+
+  padding: 20px;
+  font-family: "open sans", "sans-serif";
+}
+
+/* Accordion styling slut */
