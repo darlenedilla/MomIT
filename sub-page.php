@@ -23,3 +23,5 @@ Template Name: Subpage
     endwhile; //resetting the page loop
     wp_reset_query(); //resetting the page query
     ?>
+
+    <?php get_footer(); ?>
