@@ -94,3 +94,22 @@ function momit_custom_header_setup(){
 }
 
 add_action('after_setup_theme','momit_custom_header_setup');
+
+
+//  Adding allowed mime types
+
+function my_custom_mime_types( $mimes ) {
+ 
+// New allowed mime types.
+$mimes['svg'] = 'image/svg+xml';
+$mimes['svgz'] = 'image/svg+xml';
+$mimes['doc'] = 'application/msword';
+$mimes['mpeg4'] = 'video/mp4'; 
+$mimes['mpeg3'] = 'audio/mpeg3'; 
+ 
+// Optional. Remove a mime type.
+unset( $mimes['exe'] );
+ 
+return $mimes;
+}
+add_filter( 'upload_mimes', 'my_custom_mime_types' );

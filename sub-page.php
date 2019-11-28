@@ -44,6 +44,29 @@ Template Name: Subpage
 <?php } else if(has_term( 'acc-podcast', 'accordion_check')){
         // if this page has the taxonomy "acc podcasts": ?>
 
+           <div class="accordion-container podcast">
+            <?php 
+                $params = array('limit' => -1);
+                $acc_podcast = pods('acc_podcast', $params);
+                while ( $acc_podcast->fetch() ) {
+                ?>
+                  <div class="accordion-item-container"> 
+                    <div class="accordion-header-container">
+                    <img src="<?php echo $acc_podcast->field('promo-billede.guid');?>" alt="Et promoveringsbillede for podcast previewet">
+                      <h3><?php echo $acc_podcast->field( 'overskrift' ); ?></h3>
+                      <i class="accordion-icon fas fa-plus"></i> 
+                    </div>
+                        <div class="accordion-content-container">
+                            <video  controls name="media">
+                            <source src="<?php echo $acc_podcast->field('lydfil.guid'); ?>" type="audio/mpeg" >
+                         </video>
+                             <p><?php echo $acc_podcast->field( 'indhold' ); ?></p>
+                        </div>                        
+                    </div>
+                <?php }; ?>
+            
+            </div>
+
 
     <?php } else {
         //If this page fails both accordion checks it shows nothing
