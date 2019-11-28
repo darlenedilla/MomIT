@@ -33,7 +33,7 @@ body {
     max-height: 85vh;
     margin-top: 10px;
     margin-bottom: 30px;
-    
+    top: 10px;
 }
 
 .site-header #header-img,
@@ -61,7 +61,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
 #header-text-container{
@@ -80,8 +80,8 @@ body {
 }
 
 #download{
-    height: 75px;
-    width: 250px;
+    height: 80px;
+    width: 300px;
     background-color: #df928e;
     border-radius: 4px;
     display: flex;
@@ -93,8 +93,8 @@ body {
 }
 
 .download-buttons {
-  width: 100px;
-  height: 35px;
+  width: 120px;
+  height: 40px;
 }
 
 #divider {
