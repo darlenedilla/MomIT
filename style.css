@@ -22,6 +22,9 @@ html {
 
 body {
   font-size: 1.4rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: #0B4F6C;
 }
 
 .site-header,
@@ -281,7 +284,7 @@ nav {
 
 .burgerCross1 {
   transform: rotate(45deg);
-  top: 15px;
+  top: 6px;
   background-color: white;
 }
 
@@ -381,9 +384,10 @@ nav {
   position: absolute;
   right: 26vw;
   opacity: 0;
-  font-size: 50px;
+  font-size: 1.8rem;
   border-radius: 10px;
   transition-duration: 1s;
+  padding-left: 10px;
 }
 
 .widget_search input[type="submit"] {
@@ -535,3 +539,102 @@ footer {
 }
 
 /* Accordion styling slut */
+
+/*   Search results */
+
+.search-container {
+    width: 100%;
+    padding-left:15px;
+    padding-right:15px;
+    margin:auto;
+    margin-top: 70px;
+}
+
+#ss-search-page-form {
+    text-align:center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#ss-search-page-form input[type="text"] {
+    border: 2px solid #dddddd;
+    border-radius: 4px;
+    width:250px;
+    padding: 5px 15px;
+    font-size: 1.8rem;
+}
+#ss-search-page-form input[type="submit"]{
+    padding: 10px 10px;
+    margin-bottom:5px;
+    border: 0;
+    background-color: #0092cf;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.search-results{
+  min-height: 50%;
+  margin-bottom: 30px;
+}
+
+.search-results h2{
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.search-results a{
+  text-decoration: none;
+  color: #0B4F6C;
+}
+
+
+.result{
+  border: 1px solid #fefefe;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 6px 9px 0px rgba(219,219,219,0.59);
+  -moz-box-shadow: 0px 6px 9px 0px rgba(219,219,219,0.59);
+  box-shadow: 0px 6px 9px 0px rgba(219,219,219,0.59);
+}
+
+
+.search-page-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 34px;
+  font-weight: 300 !important;
+  letter-spacing: 2px;
+  line-height: 50px;
+  text-align:center;
+  display:block;
+  text-transform:uppercase;
+  padding-top:50px;
+  padding-bottom:25px;
+}
+.search-post-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 600 !important;
+  letter-spacing: 2px;
+  line-height: 50px;
+  text-align:left;
+  display:block;
+  color: #df928e;
+}
+.search-post-link {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 300 !important;
+  letter-spacing: 2px;
+  line-height: 20px;
+  text-align:left;
+  display:block;
+}
+.search-post-excerpt {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 400 !important;
+  letter-spacing: 2px;
+  line-height: 15px;
+  text-align:left;
+  display:block;
+}
