@@ -95,23 +95,21 @@ function momit_custom_header_setup(){
 
 add_action('after_setup_theme','momit_custom_header_setup');
 
-// Highlight function for search results
 
-function hls_set_query() {
-    $query  = attribute_escape(get_search_query());
-  
-    if(strlen($query) > 0){
-      echo '
-        <script type="text/javascript">
-          var hls_query  = "'.$query.'";
-        </script>
-      ';
-    }
-  }
-  
-  function hls_init_jquery() {
-    wp_enqueue_script('jquery');
-  }
-  
-  add_action('init', 'hls_init_jquery');
-  add_action('wp_print_scripts', 'hls_set_query');
+//  Adding allowed mime types
+
+function my_custom_mime_types( $mimes ) {
+ 
+// New allowed mime types.
+$mimes['svg'] = 'image/svg+xml';
+$mimes['svgz'] = 'image/svg+xml';
+$mimes['doc'] = 'application/msword';
+$mimes['mpeg4'] = 'video/mp4'; 
+$mimes['mpeg3'] = 'audio/mpeg3'; 
+ 
+// Optional. Remove a mime type.
+unset( $mimes['exe'] );
+ 
+return $mimes;
+}
+add_filter( 'upload_mimes', 'my_custom_mime_types' );

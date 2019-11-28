@@ -6,8 +6,9 @@ jQuery(function(){
         jQuery("#scroll-arrow").css("animation-play-state", "paused");
     });
 
-    burgerListener();
-    searchBarListener();
+  burgerListener();
+  searchBarListener();
+  accordionListener();
 });
 
 // BurgerMenu Script
@@ -98,4 +99,28 @@ function searchBarListener() {
   });
 }
 
+// Accordion function
+function accordionListener() {
+  // variables
+  var accordion_content = document.getElementsByClassName(
+    "accordion-content-container"
+  );
+  var accordion_icon = document.getElementsByClassName("accordion-icon");
+  var accordion_header = document.getElementsByClassName(
+    "accordion-header-container"
+  );
 
+  for (let i = 0; i < accordion_header.length; i++) {
+    accordion_header[i].addEventListener("click", function() {
+      if (accordion_content[i].style.display == "block") {
+        accordion_content[i].style.display = "none";
+        accordion_icon[i].classList.toggle("fa-plus");
+        accordion_icon[i].classList.toggle("fa-minus");
+      } else {
+        accordion_content[i].style.display = "block";
+        accordion_icon[i].classList.toggle("fa-plus");
+        accordion_icon[i].classList.toggle("fa-minus");
+      }
+    });
+  }
+}

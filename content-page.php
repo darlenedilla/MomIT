@@ -22,7 +22,7 @@ Template Name: Content Page (accordion)
         </div>
     <?php endif; ?>
 </header>
-<div id="sub-page-button-section">
+<div id="page-content-section">
 <?php
     // TO SHOW THE PAGE CONTENTS
     while ( have_posts() ) : the_post(); ?> <!--Because the_content() works only inside a WP Loop -->
