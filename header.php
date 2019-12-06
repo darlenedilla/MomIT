@@ -1,6 +1,8 @@
-<html>
+<html lang="da">
     <head>
       <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title><?php wp_title(''); ?></title>
+      <link rel="canonical" href="https://momit.1221s.com">
         <?php wp_head(); ?>
     </head>
     <body>
