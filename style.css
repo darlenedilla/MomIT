@@ -373,7 +373,7 @@ nav {
   width: 0vw;
   height: 5vh;
   position: absolute;
-  right: 13vw;
+  right: 15vw;
   opacity: 0;
   font-size: 1.8rem;
   border-radius: 10px;
@@ -383,7 +383,7 @@ nav {
 
 .widget_search input[type="submit"] {
   content: "";
-  width: 35px;
+  width: 46px;
   height: 35px;
   background: url("images/search_icon.png") top left no-repeat;
   background-size: 50%;
