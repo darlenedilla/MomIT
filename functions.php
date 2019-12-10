@@ -4,7 +4,7 @@
  * Loading stylesheets and scripts
  */
 function load_stylesheets(){
-    wp_register_style('stylesheet', get_template_directory_uri() . '/style.css',
+    wp_register_style('stylesheet', get_template_directory_uri() . '/style.min.css',
     array(), false, 'all');
     wp_enqueue_style('stylesheet');
     wp_enqueue_style( 'custom-fa', 'https://use.fontawesome.com/releases/v5.0.6/css/all.css' );
