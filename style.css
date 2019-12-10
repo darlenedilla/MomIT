@@ -350,20 +350,16 @@ nav {
 }
 
 .custom-logo-link img {
-  height: 80%;
+  height: 45px;
   width: auto;
+  object-fit: cover;
 }
 
 /*  search widget */
-.widget_search {
-  width: 13%;
-  height: 70%;
-}
 
 #searchBarInitial {
   width: 20%;
   height: 70%;
-  /* background-color: red; */
   position: absolute;
   right: 0;
   z-index: 200;
@@ -375,9 +371,9 @@ nav {
 
 .widget_search input[type="text"] {
   width: 0vw;
-  height: 65%;
+  height: 5vh;
   position: absolute;
-  right: 26vw;
+  right: 13vw;
   opacity: 0;
   font-size: 1.8rem;
   border-radius: 10px;
@@ -386,10 +382,9 @@ nav {
 }
 
 .widget_search input[type="submit"] {
-  content: "hello";
-  height: auto;
-  min-height: 100%;
-  width: 100%;
+  content: "";
+  width: 35px;
+  height: 35px;
   background: url("images/search_icon.png") top left no-repeat;
   background-size: 50%;
   background-position: center;
@@ -587,7 +582,7 @@ footer {
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
-  margin-top: 70px;
+  margin-top: 90px;
 }
 
 #ss-search-page-form {

@@ -7,7 +7,7 @@
         <div class="search-results">
             <?php if ( have_posts() ) : ?>
                 <h2 class="search-title">
-                    <?php echo $wp_query->found_posts; ?> <?php _e( 'Search Results Found For', 'locale' ); ?>: "<?php the_search_query(); ?>"
+                    <?php echo $wp_query->found_posts; ?> <?php _e( 'søgeresultater for', 'locale' ); ?>: "<?php the_search_query(); ?>"
                 </h2>
                     <?php while ( have_posts() ) : the_post(); ?>
                     <a href="<?php the_permalink();?>">

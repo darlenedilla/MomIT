@@ -78,7 +78,7 @@ function searchBarListener() {
       }
 
       s.style.opacity = "1";
-      s.style.width = "50vw";
+      s.style.width = "60vw";
       searchBarShown = 1;
 
       searchBarInitial.style.left = "0";
