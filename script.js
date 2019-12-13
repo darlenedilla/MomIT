@@ -6,7 +6,6 @@ jQuery(function() {
       },
       1000
     );
-    jQuery("#scroll-arrow").css("animation-play-state", "paused");
   });
 
   burgerListener();
